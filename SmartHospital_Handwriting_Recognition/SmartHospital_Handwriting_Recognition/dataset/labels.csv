@@ -1,5 +1,10 @@
-image,text
-# Replace this file with your real annotations.
-# Example:
-# img001.png,Take one tablet after food
-# img002.png,Amoxicillin 500 mg 1-0-1
+image,text,source_pdf,page,label_status
+Cold (5.12.2015) (1)_001.png,Cold,Cold (5.12.2015) (1).pdf,1,PROVISIONAL_FILENAME_LABEL
+Cold (5.12.2015)_001.png,Cold,Cold (5.12.2015).pdf,1,PROVISIONAL_FILENAME_LABEL
+Conjunctivitis (16.4.2018)_001.png,Conjunctivitis,Conjunctivitis (16.4.2018).pdf,1,PROVISIONAL_FILENAME_LABEL
+Dermatologist Checkup-Scars (11.10.2024)_001.png,Dermatologist Checkup-Scars,Dermatologist Checkup-Scars (11.10.2024).pdf,1,PROVISIONAL_FILENAME_LABEL
+General Checkup (12.3.2011)_001.png,General Checkup,General Checkup (12.3.2011).pdf,1,PROVISIONAL_FILENAME_LABEL
+Headache-Right (4.10.2021)_001.png,Headache-Right,Headache-Right (4.10.2021).pdf,1,PROVISIONAL_FILENAME_LABEL
+Septoplasty (16.2.2026)_001.png,Septoplasty,Septoplasty (16.2.2026).pdf,1,PROVISIONAL_FILENAME_LABEL
+Throat infection (11.11.2014)_001.png,Throat infection,Throat infection (11.11.2014).pdf,1,PROVISIONAL_FILENAME_LABEL
+Viral Fever (15.2.2012)_001.png,Viral Fever,Viral Fever (15.2.2012).pdf,1,PROVISIONAL_FILENAME_LABEL

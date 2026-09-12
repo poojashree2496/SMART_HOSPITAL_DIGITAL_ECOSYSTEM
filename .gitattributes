@@ -1,0 +1,1 @@
+SmartHospital_Handwriting_Recognition/SmartHospital_Handwriting_Recognition/models/*.pth filter=lfs diff=lfs merge=lfs -text

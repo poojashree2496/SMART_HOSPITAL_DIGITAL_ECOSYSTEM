@@ -7,3 +7,4 @@ Pillow>=10.0
 scikit-learn>=1.3
 tqdm>=4.66
 python-Levenshtein>=0.25
+PyMuPDF>=1.24

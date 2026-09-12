@@ -1,5 +1,6 @@
 import argparse
 import json
+from pathlib import Path
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -51,6 +52,7 @@ def main():
     metrics["loss"] = total_loss / max(1, len(loader))
 
     print(json.dumps(metrics, indent=2))
+    Path(args.output).parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8") as f:
         json.dump(metrics, f, indent=2, ensure_ascii=False)
 

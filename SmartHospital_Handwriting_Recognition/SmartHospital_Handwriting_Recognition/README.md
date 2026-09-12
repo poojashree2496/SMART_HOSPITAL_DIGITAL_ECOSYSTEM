@@ -23,7 +23,19 @@ dataset/images/
     img002.png
     ...
 
-Create `dataset/labels.csv`:
+The supplied files are PDFs. First install the dependencies and render them:
+
+```bash
+python src/prepare_dataset.py
+```
+
+This creates one PNG per PDF page in `dataset/images/` and writes `dataset/labels.csv`.
+The generated `text` values are provisional case names taken from the PDF filenames. They
+are useful for checking the complete pipeline, but they are not a transcription of the
+handwriting. Open each rendered page and replace every provisional value with the exact
+visible handwritten text before using CER/WER as an accuracy claim.
+
+You can also create `dataset/labels.csv` manually:
 
 ```csv
 image,text
@@ -48,6 +60,10 @@ For GPU-enabled PyTorch, install the appropriate PyTorch build for your CUDA ver
 ```bash
 python src/train.py --data_csv dataset/labels.csv --image_dir dataset/images --epochs 50 --batch_size 16
 ```
+
+With nine source PDFs, this is a smoke-test dataset, not enough data for a reliable
+medical handwriting model. Add many accurately transcribed line images and keep a held-out
+doctor or prescription set for evaluation.
 
 The best checkpoint is saved to:
 

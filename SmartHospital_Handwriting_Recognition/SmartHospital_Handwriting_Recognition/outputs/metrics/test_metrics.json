@@ -1,0 +1,9 @@
+{
+  "CER": 1.0,
+  "WER": 1.0,
+  "character_accuracy": 0.0,
+  "word_accuracy": 0.0,
+  "exact_sequence_accuracy": 0.0,
+  "samples": 9,
+  "loss": 3.9874966144561768
+}
